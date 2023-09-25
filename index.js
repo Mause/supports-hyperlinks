@@ -26,7 +26,7 @@ function parseVersion(versionString) {
 }
 
 /**
-@param {{ isTTY?: boolean | undefined }} stream
+@param {{ isTTY?: boolean | undefined } | undefined} stream
 @returns {boolean}
 */
 function supportsHyperlink(stream) {
