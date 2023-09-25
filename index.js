@@ -58,7 +58,7 @@ function supportsHyperlink(stream) {
 	}
 
 	// If they specify no colors, they probably don't want hyperlinks.
-	if (!supportsColor.supportsColor(stream)) {
+	if (!supportsColor.supportsColor({isTTY: stream?.isTTY})) {
 		return false;
 	}
 
